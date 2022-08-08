@@ -1,3 +1,5 @@
+# Documenting the PhD slog, one day at a time
+
 ## 2022 August 8
 
 - Dev meeting: next thursday, 8 am pacific time (4 pm BST).
