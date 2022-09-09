@@ -1,0 +1,277 @@
+
+* Documenting the PhD slog, one day at a time*
+
+#+TODO: TODO | CURRENT | DONE
+# https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html
+
+
+#+BEGIN: clocktable :scope subtree :maxlevel 4 :block today
+#+CAPTION: Clock summary at [2022-09-09 Fri 15:59], for Friday, September 09, 2022.
+| Headline                                | Time   |      |      |      |
+|-----------------------------------------+--------+------+------+------|
+| *Total time*                            | *3:02* |      |      |      |
+|-----------------------------------------+--------+------+------+------|
+| Documenting the PhD slog, one day at... | 3:02   |      |      |      |
+| \_  Time Tracking                       |        | 3:02 |      |      |
+| \_    Engineering Programming           |        |      | 0:58 |      |
+| \_      Sheperd LLVM bindings patch.    |        |      |      | 0:08 |
+| \_      Delinearization proofs          |        |      |      | 0:50 |
+| \_    Rebuttal Writing                  |        |      | 0:30 |      |
+| \_      lean-mlir rebuttal              |        |      |      | 0:30 |
+| \_    Meetings                          |        |      | 1:20 |      |
+| \_      Tobias Meeting                  |        |      |      | 1:20 |
+| \_    Coffee Break                      |        |      | 0:14 |      |
+#+END:
+
+
+
+** Time Tracking
+
+*** Exploratory Programming
+
+**** TODO [#C] Collect Evaluation Benchmark for `lean-mlir` linalg proofs.
+**** TODO [#A] Dialect projection theory
+
+*** Engineering Programming
+
+**** TODO [#A] Sheperd LLVM bindings patch.
+:LOGBOOK:
+CLOCK: [2022-09-09 Fri 15:36]--[2022-09-09 Fri 15:44] =>  0:08
+CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
+:END:
+
+
+**** TODO [#B] Cleanup LLVM codegen patch
+
+**** TODO [#C] Delinearization proofs
+:LOGBOOK:
+CLOCK: [2022-09-09 Fri 13:10]--[2022-09-09 Fri 14:00]  =>  0:50
+CLOCK: [2022-09-08 Thu 17:14]--[2022-09-08 Thu 19:50] =>  2:36
+CLOCK: [2022-09-08 Thu 16:48]--[2022-09-08 Thu 16:48] =>  0:00
+:END:
+
+
+*** Studying for paper
+:LOGBOOK:
+CLOCK: [2022-09-08 Thu 11:15]--[2022-09-08 Thu 11:16] =>  0:01
+:END:
+
+**** TODO [#B] Partial Evaluation for lambda calculus
+
+*** Admin Stuff
+:LOGBOOK:
+CLOCK: [2022-09-08 Thu 11:16]--[2022-09-08 Thu 11:17] =>  0:01
+CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
+:END:
+
+**** TODO [#A] Flight Booking LLVM Dev 2022
+**** TODO [#B] Ping Admin about going home in February.
+**** DONE [#A] Fill LLVM Travel grant.
+
+*** Rebuttal Writing
+
+**** TODO [#A] lean-mlir rebuttal
+:LOGBOOK:
+CLOCK: [2022-09-09 Fri 12:40]--[2022-09-09 Fri 13:10]  =>  0:30
+:END:
+
+
+*** Paper Writing
+:LOGBOOK:
+CLOCK: [2022-09-08 Thu 11:17]--[2022-09-08 Thu 11:32] =>  0:15
+CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
+:END:
+
+*** Meetings
+:LOGBOOK:
+CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:15] =>  0:01
+:END:
+
+**** Lean4 Backend
+SCHEDULED: <2022-09-09 Fri +1w>
+
+**** Lean4 Codegen
+SCHEDULED: <2022-09-12 Mon +1w>
+
+**** Tobias Meeting
+SCHEDULED: <2022-09-12 Mon +1w>
+
+:LOGBOOK:
+CLOCK: [2022-09-09 Fri 14:00]--[2022-09-09 Fri 15:20]  =>  1:20
+:END:
+
+
+*** Math Distraction
+:LOGBOOK:
+CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
+:END:
+
+*** Programming Distraction
+:LOGBOOK:
+CLOCK: [2022-09-08 Thu 11:32]--[2022-09-08 Thu 11:54] =>  0:22
+CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
+:END:
+
+
+
+*** Coffee Break
+:LOGBOOK:
+CLOCK: [2022-09-09 Fri 15:45]--[2022-09-09 Fri 15:59] =>  0:14
+:END:
+
+** Meetings with Leo (Monday/Friday)
+
+-- Meeting URL: https://moderated.jitsi.net/f0202a1b2e2947f3bf5176e708f82a2857260acf2d0f4fa6b356ae9fba614318
+-- Have LCNF as macro_rules.
+-- Collapse cases with default. This can collapse with join points, which gives more simplification.
+
+-- Constant folding / partial evaluation for LCNF.
+-- Look at the code generated via LCNF.
+-- We have two different notions of type checking. One with LCNF ~ LCNF, and one with LCNF ~ CIC.
+
+-- case x of
+--  | a -> f 1; jmp k
+--  | b -> f 2; jmp k
+--  | c -> f 3; jmp k
+
+
+-- Finishing the simplifier
+-- Moving the specializer.
+-- Send a PR that adds a value domain, so we can directly codegen the static
+--      values.
+-- * how to bench:
+--   do compile twice, first time is to make sure we compile all dependencies.
+--   Then do set_option profiler true, and then recompile.
+-- * `perf report`
+--   Increase stack size, sort by time.
+--   Count the number of inlined functions, visited nodes, inlined local functions, etc.
+
+
+**** Aug 1
+
+
+***** Target triple
+
+- Cmake can find target triple: https://github.com/google/libcxx/blob/master/cmake/Modules/GetTriple.cmake
+- LLVM knows everything about a triple: https://llvm.org/doxygen/group__LLVMCTarget.html
+    - LLVMGetTargetFromTriple: const char * → LLVMTargetRef
+    - LLVMCreateTargetMachine: LLVMTargetRef → LLVMTargetMachineRef
+    - LLVMCreateTargetDataLayout: LLVMTargetMachineRef → LLVMTargetDataRef
+    - LLVMIntPtrType: LLVMTargetDataRef → LLVMTypeRef
+    - Triple::getOs: llvm::Triple → OS [can be used for our `#if WINDOWS`]
+
+  - How does rust do this?
+
+***** lean_inline.cpp
+  - Had to manually copy from `lean_inlines.h` and replace `static inline` with `extrn "C" LEANSHARED`.
+  - More sensible distribution story?
+
+***** Action points
+  1. Send PR for LLVM bindings. [`LLVMBindings.lean`. Merge this]
+  2. Add lake support for LLVM IR via facets?
+  3. Don't we only need `lean_inlines.cpp`? Why do we need the others? We can link `libleanshared` separately
+     at link-time, and only use `lean_inlnes.cpp` during LLVM module optmisation time.
+  4. We need three tools: `llvm-link`, `opt`, `llc`. (this is *Critical*).
+  5. `lean_system_platform_nbits` to get the number of bits in a pointer.
+  6. Bootstrapping? Solve the `i32/i64` difference between the two platforms. Use a type alias that is later specialized?
+     (This is *Critical*).
+  7. New IR: memory layout.
+  8. Have `alwaysinline` and `musttailcall` in `EmitLLVM`.
+  9. Split the compilation pipeline in `.lean` to `.olean`, followed by `.olean` to `.ir`,and then to `.bc/.llvm/.c/.wasm`.
+     (Ask in the lean4-dev, Mac would know where we would need to change in `lake`.)
+  10. `ccache`? Maintain cache ourselves (?)
+
+Dev meeting: next thursday, 8 am pacific time (4 pm BST).
+
+def foo: Int → Id Bool := fun n => true
+def bar: Bool → Id Nat := fun n => 10
+
+
+
+abbrev M := ReaderT Int Id
+
+def main_: M Nat :=  do
+  -- let k ← (foo 1 >>= (fun x => bar x))
+  let k ← (foo 1 >>= bar)
+  return (k + 1)
+
+
+
+-- Research ideas:
+-- 1. Kevin Buzzard's idea of computing $SOME_MATH_THING fast
+-- 2. partial evaluation for compiler
+
+
+** 2022 August 8
+
+***** C to Isabelle
+
+- [AutoCorres](https://trustworthy.systems/projects/TS/autocorres/)
+- [PhD thesis: Automated proof producing abstraction of C code](https://trustworthy.systems/publications/nicta_full_text/8758.pdf)
+
+***** Lean Dev meeting
+
+- Dev meeting: next thursday, 8 am pacific time (4 pm BST).
+
+***** Target triple
+
+- Cmake can find target triple: https://github.com/google/libcxx/blob/master/cmake/Modules/GetTriple.cmake
+- LLVM knows everything about a triple: https://llvm.org/doxygen/group__LLVMCTarget.html
+    - LLVMGetTargetFromTriple: const char * → LLVMTargetRef
+    - LLVMCreateTargetMachine: LLVMTargetRef → LLVMTargetMachineRef
+    - LLVMCreateTargetDataLayout: LLVMTargetMachineRef → LLVMTargetDataRef
+    - LLVMIntPtrType: LLVMTargetDataRef → LLVMTypeRef
+    - Triple::getOs: llvm::Triple → OS [can be used for our `#if WINDOWS`]
+
+#### Leanc
+  - Must add a `--print-triple` to get target triple info?
+  - How does rust do this?
+
+#### lean_inline.cpp
+  - Had to manually copy from `lean_inlines.h` and replace `static inline` with `extrn "C" LEANSHARED`.
+  - More sensible distribution story?
+
+#### Action points
+  1. Send PR for LLVM bindings. [`LLVMBindings.lean`. Merge this]
+  2. Add lake support for LLVM IR via facets?
+  3. Don't we only need `lean_inlines.cpp`? Why do we need the others? We can link `libleanshared` separately
+     at link-time, and only use `lean_inlnes.cpp` during LLVM module optmisation time.
+  4. We need three tools: `llvm-link`, `opt`, `llc`. (this is *Critical*).
+  5. `lean_system_platform_nbits` to get the number of bits in a pointer.
+  6. Bootstrapping? Solve the `i32/i64` difference between the two platforms. Use a type alias that is later specialized?
+     (This is *Critical*).
+  7. New IR: memory layout.
+  8. Have `alwaysinline` and `musttailcall` in `EmitLLVM`.
+  9. Split the compilation pipeline in `.lean` to `.olean`, followed by `.olean` to `.ir`,and then to `.bc/.llvm/.c/.wasm`.
+     (Ask in the lean4-dev, Mac would know where we would need to change in `lake`.)
+  10. `ccache`? Maintain cache ourselves (?)
+
+#### Notes by `mac` on writing a plugin for `lake` for new backend
+
+Here are some notes on a how a new backend (and a separate C backend) would be implemented in Lake.
+
+## Separate C Backend
+
+If the C backend is separated from the `olean`/`ilean` build (and is thus able
+to be built separately), one should ideally remove the whole `isLeanOnly`
+configuration and replace it with just a separate build step.
+
+This would entail removing the `isLeanOnly` option from `PackageConfig` and
+`Package`, the C build from `Module.buildUnlessUpToDate`, and the C related
+code from `Module.recBuildLean`. Then, one would add a separate build function
+as below for the C code.
+
+## New Backend
+
+To add a new build step from the `olean/ilean`, add a new facet ala the current
+`o` facet (and its build function `buildLeanO`) that waits for the the module
+build and then builds the desired file. For example:
+
+```lean
+def Module.recBuildLeanLl (self : Module) : IndexBuildM (BuildJob FilePath) := do
+  buildLeanLl self.name.toString self.llFile (← self.leanBin.fetch) self.llArgs
+
+def Module.oFacetConfig : ModuleFacetConfig llFacet :=
+  mkFacetJobConfig Module.recBuildLeanLl
+```
+
