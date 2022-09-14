@@ -172,6 +172,7 @@ CLOCK: [2022-09-09 Fri 15:45]--[2022-09-09 Fri 15:59] =>  0:14
 
 ** Meetings with Leo (Monday/Friday)
 
+
 - Meeting URL: https://moderated.jitsi.net/f0202a1b2e2947f3bf5176e708f82a2857260acf2d0f4fa6b356ae9fba614318
 
 *** LCNF Ideas
@@ -340,3 +341,11 @@ def main_: M Nat :=  do
 -- 1. Kevin Buzzard's idea of computing $SOME_MATH_THING fast
 -- 2. partial evaluation for compiler
 
+
+** Logbook
+*** <2022-09-14 Wed>
+- Worked on Dialect projection theory. I have two ideas, one based on using 'Trees That Grow',
+  and one based on 'Final Tagless'
+
+- Trees that Grow: We make our MLIR AST "customizable", so different consumers of our MLIR AST will use the
+  same AST type, "customized" to their needs, and provide coercions.
