@@ -5,29 +5,21 @@
 # https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html
 
 
-#+BEGIN: clocktable :scope subtree :maxlevel 4 :block yesterday
-#+CAPTION: Clock summary at [2022-09-10 Sat 17:06], for Friday, September 09, 2022.
-| Headline                                         | Time   |      |      |      |
-|--------------------------------------------------+--------+------+------+------|
-| *Total time*                                     | *4:23* |      |      |      |
-|--------------------------------------------------+--------+------+------+------|
-| Documenting the PhD slog, one day at...          | 4:23   |      |      |      |
-| \_  Time Tracking                                |        | 4:23 |      |      |
-| \_    Exploratory Programming                    |        |      | 0:57 |      |
-| \_      Dialect projection theory: Minimal...    |        |      |      | 0:57 |
-| \_    Engineering Programming                    |        |      | 0:58 |      |
-| \_      Sheperd LLVM bindings for Lean4 patch.   |        |      |      | 0:08 |
-| \_      Delinearization proofs                   |        |      |      | 0:50 |
-| \_    Admin Stuff                                |        |      | 0:04 |      |
-| \_      Ping Admin about going home in February. |        |      |      | 0:04 |
-| \_    Rebuttal Writing                           |        |      | 0:30 |      |
-| \_      lean-mlir POPL 2022 rebuttal             |        |      |      | 0:30 |
-| \_    Meetings                                   |        |      | 1:20 |      |
-| \_      Tobias Meeting                           |        |      |      | 1:20 |
-| \_    Programming Distraction                    |        |      | 0:20 |      |
-| \_      Collect list of questions for Leo...     |        |      |      | 0:20 |
-| \_    Breaks                                     |        |      | 0:14 |      |
-| \_      Coffee                                   |        |      |      | 0:14 |
+#+BEGIN: clocktable :scope subtree :maxlevel 4 :block today
+#+CAPTION: Clock summary at [2022-09-14 Wed 18:50], for Wednesday, September 14, 2022.
+| Headline                                      | Time   |      |      |      |
+|-----------------------------------------------+--------+------+------+------|
+| *Total time*                                  | *4:49* |      |      |      |
+|-----------------------------------------------+--------+------+------+------|
+| Documenting the PhD slog, one day at...       | 4:49   |      |      |      |
+| \_  Time Tracking                             |        | 4:49 |      |      |
+| \_    Exploratory Programming                 |        |      | 4:04 |      |
+| \_      Dialect projection theory: Minimal... |        |      |      | 4:04 |
+| \_    Admin Stuff                             |        |      | 0:11 |      |
+| \_      Book Room for Sheaves in Gtry&Logic.  |        |      |      | 0:11 |
+| \_    Paper Writing                           |        |      | 0:17 |      |
+| \_      Egg Abstract                          |        |      |      | 0:17 |
+| \_    Coffee                                  |        |      | 0:17 |      |
 #+END:
 
 
@@ -40,15 +32,24 @@
 :Effort:   2d
 :END:
 :LOGBOOK:
+CLOCK: [2022-09-14 Wed 17:17]--[2022-09-14 Wed 18:50] =>  1:33
+CLOCK: [2022-09-14 Wed 16:54]--[2022-09-14 Wed 17:10] =>  0:16
+CLOCK: [2022-09-14 Wed 16:04]--[2022-09-14 Wed 16:47] =>  0:43
+CLOCK: [2022-09-14 Wed 15:48]--[2022-09-14 Wed 16:00] =>  0:12
+CLOCK: [2022-09-14 Wed 15:46]--[2022-09-14 Wed 15:46] =>  0:00
+CLOCK: [2022-09-14 Wed 14:13]--[2022-09-14 Wed 15:17] =>  1:04
+CLOCK: [2022-09-14 Wed 14:07]--[2022-09-14 Wed 14:12] =>  0:05
+CLOCK: [2022-09-14 Wed 13:55]--[2022-09-14 Wed 14:05] =>  0:10
+CLOCK: [2022-09-14 Wed 13:54]--[2022-09-14 Wed 13:55] =>  0:01
 CLOCK: [2022-09-09 Fri 16:34]--[2022-09-09 Fri 17:31] =>  0:57
 :END:
-**** TODO [#C] Collect Evaluation Benchmark for `lean-mlir` linalg proofs.
+**** TODO [#Z] Collect Evaluation Benchmark for `lean-mlir` linalg proofs.
 
 *** Engineering Programming
 
 **** TODO [#A] Sheperd LLVM bindings for Lean4 patch.
 :LOGBOOK:
-CLOCK: [2022-09-09 Fri 17:31]
+CLOCK: [2022-09-09 Fri 17:31]--[2022-09-09 Fri 17:46] =>  0:15
 CLOCK: [2022-09-09 Fri 15:36]--[2022-09-09 Fri 15:44] =>  0:08
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
 :END:
@@ -56,7 +57,7 @@ CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
 
 **** TODO [#B] Cleanup LLVM codegen for Lean4 patch
 
-**** TODO [#C] Delinearization proofs
+**** TODO [#Z] Delinearization proofs
 :LOGBOOK:
 CLOCK: [2022-09-09 Fri 13:10]--[2022-09-09 Fri 14:00]  =>  0:50
 CLOCK: [2022-09-08 Thu 17:14]--[2022-09-08 Thu 19:50] =>  2:36
@@ -79,14 +80,17 @@ CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
 
 **** TODO [#A] Flight Booking LLVM Dev 2022
 **** TODO [#B] Ping Admin about going home in February.
+**** TODO [#B] Book Room for Sheaves in Gtry&Logic.
 :LOGBOOK:
+CLOCK: [2022-09-14 Wed 16:47]--[2022-09-14 Wed 16:54] =>  0:07
+CLOCK: [2022-09-14 Wed 16:00]--[2022-09-14 Wed 16:04] =>  0:04
 CLOCK: [2022-09-09 Fri 16:05]--[2022-09-09 Fri 16:09] =>  0:04
 :END:
 **** DONE [#A] Fill LLVM Travel grant.
 
 *** Rebuttal Writing
 
-**** TODO [#A] lean-mlir POPL 2022 rebuttal
+**** DONE [#A] lean-mlir POPL 2022 rebuttal
 :LOGBOOK:
 CLOCK: [2022-09-09 Fri 12:40]--[2022-09-09 Fri 13:10]  =>  0:30
 :END:
@@ -98,6 +102,17 @@ CLOCK: [2022-09-08 Thu 11:17]--[2022-09-08 Thu 11:32] =>  0:15
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
 :END:
 
+**** TODO [#A] Egg Abstract
+SCHEDULED: <2022-09-15 Thu 11:55>
+:LOGBOOK:
+CLOCK: [2022-09-14 Wed 15:17]--[2022-09-14 Wed 15:34] =>  0:17
+:END:
+
+
+**** TODO [#A] Egg Paper
+SCHEDULED: <2022-09-22 Thu 11:55>
+
+
 *** Meetings
 :LOGBOOK:
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:15] =>  0:01
@@ -105,6 +120,8 @@ CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:15] =>  0:01
 
 **** Lean4 Backend
 SCHEDULED: <2022-09-09 Fri +1w>
+
+**** 
 
 **** Lean4 Codegen
 SCHEDULED: <2022-09-12 Mon +1w>
@@ -134,18 +151,24 @@ CLOCK: [2022-09-09 Fri 16:10]--[2022-09-09 Fri 16:30] =>  0:20
 :END:
 
 - Precise semantics of ~impure~ ?
-- 
+
 
 *** Breaks
 
-**** Coffee
+*** TODO [#Z] Coffee
 :LOGBOOK:
+CLOCK: [2022-09-14 Wed 17:10]--[2022-09-14 Wed 17:17] =>  0:07
+CLOCK: [2022-09-14 Wed 17:10]--[2022-09-14 Wed 17:10] =>  0:00
+CLOCK: [2022-09-14 Wed 15:47]--[2022-09-14 Wed 15:47] =>  0:00
+CLOCK: [2022-09-14 Wed 15:46]--[2022-09-14 Wed 15:46] =>  0:00
+CLOCK: [2022-09-14 Wed 15:46]--[2022-09-14 Wed 15:46] =>  0:00
+CLOCK: [2022-09-14 Wed 15:34]--[2022-09-14 Wed 15:44] =>  0:10
 CLOCK: [2022-09-09 Fri 15:45]--[2022-09-09 Fri 15:59] =>  0:14
 :END:
 
 *** Life Stuff
 ***** TODO [#C] Pickup parcel from royal mail
-***** TODO [#C] Buy shoes that don't get wel
+***** TODO [#C] Buy shoes that don't get wet
 
 ** Meetings with Leo (Monday/Friday)
 
