@@ -6,21 +6,24 @@
 
 
 #+BEGIN: clocktable :scope subtree :maxlevel 4 :block today
-#+CAPTION: Clock summary at [2022-09-14 Wed 18:50], for Wednesday, September 14, 2022.
-| Headline                                      | Time   |      |      |      |
-|-----------------------------------------------+--------+------+------+------|
-| *Total time*                                  | *4:49* |      |      |      |
-|-----------------------------------------------+--------+------+------+------|
-| Documenting the PhD slog, one day at...       | 4:49   |      |      |      |
-| \_  Time Tracking                             |        | 4:49 |      |      |
-| \_    Exploratory Programming                 |        |      | 4:04 |      |
-| \_      Dialect projection theory: Minimal... |        |      |      | 4:04 |
-| \_    Admin Stuff                             |        |      | 0:11 |      |
-| \_      Book Room for Sheaves in Gtry&Logic.  |        |      |      | 0:11 |
-| \_    Paper Writing                           |        |      | 0:17 |      |
-| \_      Egg Abstract                          |        |      |      | 0:17 |
-| \_    Coffee                                  |        |      | 0:17 |      |
-#+END:
+#+CAPTION: Clock summary at [2022-09-15 Thu 18:44], for Thursday, September 15, 2022.
+| Headline                                         | Time   |      |      |      |
+|--------------------------------------------------+--------+------+------+------|
+| *Total time*                                     | *5:10* |      |      |      |
+|--------------------------------------------------+--------+------+------+------|
+| Documenting the PhD slog, one day at...          | 5:10   |      |      |      |
+| \_  Time Tracking                                |        | 5:10 |      |      |
+| \_    Exploratory Programming                    |        |      | 2:21 |      |
+| \_      Dialect projection theory: Minimal...    |        |      |      | 2:21 |
+| \_    Engineering Programming                    |        |      | 0:15 |      |
+| \_      Figure out evaluation section for PLDI   |        |      |      | 0:15 |
+| \_    Admin Stuff                                |        |      | 0:06 |      |
+| \_      Ping Admin about going home in February. |        |      |      | 0:06 |
+| \_    Paper Writing                              |        |      | 1:13 |      |
+| \_      MLIR Semantics Paper                     |        |      |      | 1:13 |
+| \_    Meetings                                   |        |      | 1:15 |      |
+| \_      Performance Coaching                     |        |      |      | 1:15 |
+ #+END:
 
 
 
@@ -30,8 +33,11 @@
 **** TODO [#A] Dialect projection theory: Minimal Eg. Stx/Sem
 :PROPERTIES:
 :Effort:   2d
+:ORDERED:  t
 :END:
 :LOGBOOK:
+CLOCK: [2022-09-15 Thu 17:29]--[2022-09-15 Thu 18:44] =>  1:15
+CLOCK: [2022-09-15 Thu 12:00]--[2022-09-15 Thu 13:06] =>  1:06
 CLOCK: [2022-09-14 Wed 17:17]--[2022-09-14 Wed 18:50] =>  1:33
 CLOCK: [2022-09-14 Wed 16:54]--[2022-09-14 Wed 17:10] =>  0:16
 CLOCK: [2022-09-14 Wed 16:04]--[2022-09-14 Wed 16:47] =>  0:43
@@ -46,6 +52,17 @@ CLOCK: [2022-09-09 Fri 16:34]--[2022-09-09 Fri 17:31] =>  0:57
 **** TODO [#Z] Collect Evaluation Benchmark for `lean-mlir` linalg proofs.
 
 *** Engineering Programming
+
+**** TODO [#A] Figure out evaluation section for PLDI
+:LOGBOOK:
+CLOCK: [2022-09-15 Thu 14:45]--[2022-09-15 Thu 15:00] =>  0:15
+CLOCK: [2022-09-15 Thu 12:00]--[2022-09-15 Thu 12:00] =>  0:00
+:END:
+
+Combinational dialect test:
+- Canonicalization tests: https://github.com/llvm/circt/blob/af0df5ae8158aebe0ee67e5dc4f54db1c9966c8e/test/Dialect/Comb/canonicalization.mlir
+- Constant folders: https://github.com/llvm/circt/blob/main/lib/Dialect/Comb/CombFolds.cpp
+- Compute known bits:https://github.com/llvm/circt/blob/main/lib/Dialect/Comb/CombAnalysis.cpp
 
 **** TODO [#A] Sheperd LLVM bindings for Lean4 patch.
 :LOGBOOK:
@@ -80,7 +97,10 @@ CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
 
 **** TODO [#A] Flight Booking LLVM Dev 2022
 **** TODO [#B] Ping Admin about going home in February.
-**** TODO [#B] Book Room for Sheaves in Gtry&Logic.
+:LOGBOOK:
+CLOCK: [2022-09-15 Thu 11:54]--[2022-09-15 Thu 12:00] =>  0:06
+:END:
+**** DONE [#B] Book Room for Sheaves in Gtry&Logic.
 :LOGBOOK:
 CLOCK: [2022-09-14 Wed 16:47]--[2022-09-14 Wed 16:54] =>  0:07
 CLOCK: [2022-09-14 Wed 16:00]--[2022-09-14 Wed 16:04] =>  0:04
@@ -113,6 +133,10 @@ CLOCK: [2022-09-14 Wed 15:17]--[2022-09-14 Wed 15:34] =>  0:17
 SCHEDULED: <2022-09-22 Thu 11:55>
 
 
+**** TODO [#A] MLIR Semantics Paper
+ :LOGBOOK:
+CLOCK: [2022-09-15 Thu 10:41]--[2022-09-15 Thu 11:54] =>  1:13
+:END:
 *** Meetings
 :LOGBOOK:
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:15] =>  0:01
@@ -121,7 +145,11 @@ CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:15] =>  0:01
 **** Lean4 Backend
 SCHEDULED: <2022-09-09 Fri +1w>
 
-**** 
+**** Performance Coaching
+:LOGBOOK:
+CLOCK: [2022-09-15 Thu 15:30]--[2022-09-15 Fri 16:45] =>  1:15
+:END:
+
 
 **** Lean4 Codegen
 SCHEDULED: <2022-09-12 Mon +1w>
@@ -344,8 +372,20 @@ def main_: M Nat :=  do
 
 ** Logbook
 *** <2022-09-14 Wed>
+
 - Worked on Dialect projection theory. I have two ideas, one based on using 'Trees That Grow',
   and one based on 'Final Tagless'
-
-- Trees that Grow: We make our MLIR AST "customizable", so different consumers of our MLIR AST will use the
+- 'Trees that Grow': We make our MLIR AST "customizable", so different consumers of our MLIR AST will use the
   same AST type, "customized" to their needs, and provide coercions.
+- 'Final Tagless': We use an encoding of our data type based on how it is consumed (final) instead of
+  how it is produced (initial). This automatically makes it compositional by construction, and we can
+  define different semantics for a language: (a) encode the language as MLIR, (b) provide an interpreter
+  of the language.
+- Got a windows machine up and running that I can SSH into
+- **Today:** Send Mathieu my flight tickets info.
+- **Today:** Get a simple example working with dialect projection with both 'Trees that grow' and 'Final tagless'
+- **Today:** Fiddle with windows box for `lean-llvm` builds. This helps establish me as the
+    second person other than Sebastian Ullrich who knows how to get the lean build working
+    on all platforms.
+    
+
