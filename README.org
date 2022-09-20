@@ -6,23 +6,21 @@
 
 
 #+BEGIN: clocktable :scope subtree :maxlevel 4 :block today
-#+CAPTION: Clock summary at [2022-09-15 Thu 18:44], for Thursday, September 15, 2022.
-| Headline                                         | Time   |      |      |      |
-|--------------------------------------------------+--------+------+------+------|
-| *Total time*                                     | *5:10* |      |      |      |
-|--------------------------------------------------+--------+------+------+------|
-| Documenting the PhD slog, one day at...          | 5:10   |      |      |      |
-| \_  Time Tracking                                |        | 5:10 |      |      |
-| \_    Exploratory Programming                    |        |      | 2:21 |      |
-| \_      Dialect projection theory: Minimal...    |        |      |      | 2:21 |
-| \_    Engineering Programming                    |        |      | 0:15 |      |
-| \_      Figure out evaluation section for PLDI   |        |      |      | 0:15 |
-| \_    Admin Stuff                                |        |      | 0:06 |      |
-| \_      Ping Admin about going home in February. |        |      |      | 0:06 |
-| \_    Paper Writing                              |        |      | 1:13 |      |
-| \_      MLIR Semantics Paper                     |        |      |      | 1:13 |
-| \_    Meetings                                   |        |      | 1:15 |      |
-| \_      Performance Coaching                     |        |      |      | 1:15 |
+#+CAPTION: Clock summary at [2022-09-20 Tue 22:15], for Tuesday, September 20, 2022.
+| Headline                                 | Time   |      |      |      |
+|------------------------------------------+--------+------+------+------|
+| *Total time*                             | *6:36* |      |      |      |
+|------------------------------------------+--------+------+------+------|
+| Documenting the PhD slog, one day at...  | 6:36   |      |      |      |
+| \_  Time Tracking                        |        | 6:36 |      |      |
+| \_    Paper Writing                      |        |      | 4:45 |      |
+| \_      Egg Paper                        |        |      |      | 4:31 |
+| \_      Hold Space: MLIR Semantics Paper |        |      |      | 0:14 |
+| \_    Math Distraction                   |        |      | 1:30 |      |
+| \_      Arguing With Mario               |        |      |      | 0:30 |
+| \_      Sheaves in Geometry and Logic    |        |      |      | 1:00 |
+| \_    Breaks                             |        |      | 0:21 |      |
+| \_      Lunch                            |        |      |      | 0:21 |
  #+END:
 
 
@@ -66,6 +64,7 @@ Combinational dialect test:
 
 **** TODO [#A] Sheperd LLVM bindings for Lean4 patch.
 :LOGBOOK:
+CLOCK: [2022-09-15 Thu 09:30]--[2022-09-15 Thu 10:00] =>  0:30
 CLOCK: [2022-09-09 Fri 17:31]--[2022-09-09 Fri 17:46] =>  0:15
 CLOCK: [2022-09-09 Fri 15:36]--[2022-09-09 Fri 15:44] =>  0:08
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
@@ -95,8 +94,11 @@ CLOCK: [2022-09-08 Thu 11:16]--[2022-09-08 Thu 11:17] =>  0:01
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
 :END:
 
-**** TODO [#A] Flight Booking LLVM Dev 2022
-**** TODO [#B] Ping Admin about going home in February.
+**** TODO [#A] Letter of Recommendations.
+**** TODO [#A] Seattle Booking LLVM Dev 2022.
+**** TODO [#B] Train Ticket Booking Haskell Friends.
+**** DONE [#A] Flight Booking LLVM Dev 2022
+**** DONE [#B] Ping Admin about going home in February.
 :LOGBOOK:
 CLOCK: [2022-09-15 Thu 11:54]--[2022-09-15 Thu 12:00] =>  0:06
 :END:
@@ -122,7 +124,7 @@ CLOCK: [2022-09-08 Thu 11:17]--[2022-09-08 Thu 11:32] =>  0:15
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
 :END:
 
-**** TODO [#A] Egg Abstract
+**** DONE [#Z] Egg Abstract
 SCHEDULED: <2022-09-15 Thu 11:55>
 :LOGBOOK:
 CLOCK: [2022-09-14 Wed 15:17]--[2022-09-14 Wed 15:34] =>  0:17
@@ -131,12 +133,20 @@ CLOCK: [2022-09-14 Wed 15:17]--[2022-09-14 Wed 15:34] =>  0:17
 
 **** TODO [#A] Egg Paper
 SCHEDULED: <2022-09-22 Thu 11:55>
-
-
-**** TODO [#A] MLIR Semantics Paper
- :LOGBOOK:
-CLOCK: [2022-09-15 Thu 10:41]--[2022-09-15 Thu 11:54] =>  1:13
+:LOGBOOK:
+CLOCK: [2022-09-20 Tue 16:00]--[2022-09-20 Tue 18:00] =>  2:00
+CLOCK: [2022-09-20 Tue 13:53]--[2022-09-20 Tue 15:24] =>  1:31
+CLOCK: [2022-09-20 Tue 11:30]--[2022-09-20 Tue 12:30] =>  1:00
 :END:
+
+
+**** TODO [#A] Hold Space: MLIR Semantics Paper
+:LOGBOOK:
+CLOCK: [2022-09-20 Tue 22:14]
+CLOCK: [2022-09-20 Tue 22:00]--[2022-09-20 Tue 22:14] =>  0:14
+:END:
+
+
 *** Meetings
 :LOGBOOK:
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:15] =>  0:01
@@ -154,6 +164,7 @@ CLOCK: [2022-09-15 Thu 15:30]--[2022-09-15 Fri 16:45] =>  1:15
 **** Lean4 Codegen
 SCHEDULED: <2022-09-12 Mon +1w>
 
+
 **** Tobias Meeting
 SCHEDULED: <2022-09-12 Mon +1w>
 
@@ -165,6 +176,16 @@ CLOCK: [2022-09-09 Fri 14:00]--[2022-09-09 Fri 15:20]  =>  1:20
 *** Math Distraction
 :LOGBOOK:
 CLOCK: [2022-09-08 Thu 11:14]--[2022-09-08 Thu 11:14] =>  0:00
+:END:
+
+**** Arguing With Mario
+:LOGBOOK:
+CLOCK: [2022-09-20 Tue 12:30]--[2022-09-20 Tue 13:00] =>  0:30
+:END:
+
+**** Sheaves in Geometry and Logic
+:LOGBOOK:
+CLOCK: [2022-09-20 Tue 21:00]--[2022-09-20 Tue 22:00] =>  1:00
 :END:
 
 *** Programming Distraction
@@ -183,7 +204,11 @@ CLOCK: [2022-09-09 Fri 16:10]--[2022-09-09 Fri 16:30] =>  0:20
 
 *** Breaks
 
-*** TODO [#Z] Coffee
+**** TODO [#Z] Lunch
+:LOGBOOK:
+CLOCK: [2022-09-20 Tue 15:24]--[2022-09-20 Tue 15:45] =>  0:21
+:END:
+**** TODO [#Z] Coffee
 :LOGBOOK:
 CLOCK: [2022-09-14 Wed 17:10]--[2022-09-14 Wed 17:17] =>  0:07
 CLOCK: [2022-09-14 Wed 17:10]--[2022-09-14 Wed 17:10] =>  0:00
